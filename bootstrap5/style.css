@@ -26,8 +26,7 @@ body {
 
 /* button */
 .button {
-    background-color: var(--secondaryColor);
-    border-color: var(--default);
+    background-color: var(--ascentColor);
     color: var(--default) !important;
     text-align: center;
     min-width: 150px;
@@ -37,9 +36,20 @@ body {
 }
 
 .button:hover {
-    background-color: var(--ascentColor);
+    background-color: var(--mainColor);
     border-color: var(--ascentColor);
-    color: var(--default) !important;
+    color: var(--ascentColor) !important;
+}
+
+/* Icon */
+.icon {
+    color: var(--default);
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: var(--ascentColor);
+    text-decoration: none;
 }
 
 /* text ascent color */
@@ -72,13 +82,13 @@ hr{
 
 /* skill */
 #skill {
-    min-height: 500px;
+    min-height: 450px;
     margin: auto;
 }
 
 #skill img{
     width: 80px;
-    margin: 40px;
+    margin: 30px;
 }
 
 /* card */
@@ -89,7 +99,7 @@ hr{
 .card {
     color: var(--default);
     background-color: #4B6598;
-    height: 350px;
+    height: 390px;
 }
 
 .card:hover {
@@ -129,3 +139,13 @@ hr{
     width: 800px;
     margin: 40px;
 }
+
+/* Footer */
+#footer {
+    background-color: var(--secondaryColor);
+    box-shadow: var(--default);
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+
