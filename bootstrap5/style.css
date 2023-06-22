@@ -16,6 +16,7 @@ body {
     background-color: var(--mainColor);
 }
 
+
 .navbar-nav li a{
     color: var(--default) !important;
 }
@@ -136,9 +137,74 @@ hr{
 }
 
 #portofolio img{
-    width: 800px;
-    margin: 40px;
+    width: 500px;
+    /* margin: 40px; */
 }
+
+/* #portofolio .card-galeri {
+    width: 900px;
+    border: 2px solid var(none);
+    border-radius: 5px;
+    background-color: var(--secondaryColor);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.image {
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .3s linear;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+
+.image img:hover {
+    transform: scale(1.1);
+} */
+
+.popup-img {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-img span {
+    position: absolute;
+    top: 10%; right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--ascentColor);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-img img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px !important;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+@media (max-widht:900px) {
+    .popup-img img {
+        width: 95%;
+    }
+} 
+
 
 /* Footer */
 #footer {
